@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+   <link rel="stylesheet" href="/static/js/cart.css"/>
+   <script src="/static/js/jquery-1.11.3.js"></script>
+   <script src="/static/js/jquery.cookie.js"></script>
+   <script src="/static/js/cart.js"></script>
+ </head>
+ <body>
+  <div class="container">
+		<!-- 1、网页头部 -->
+		<div id="top">
+			<!-- 1.1 右：列表 -->
+			<ul id="list">
+				<li id="login">
+					<a href="/login/">[登录]</a>
+					,
+					<a href="/register/">[注册有惊喜]</a>
+				</li>
+				<li>
+					<b></b>
+					果园公告
+				</li>
+				<li>
+					<b></b>
+					<a href="#">券卡兑换</a>
+				</li>
+				<li>
+					<b></b>
+					手机果园
+				</li>
+			</ul>
+			<!-- 1.2 左：三个超链接 -->
+			<!-- 1.2.1 上海 -->
+			<a href="#" class="address">
+				上海 
+				<u></u>
+			</a>
+			<!-- 1.2.2 满百包邮 -->
+			<a>满百包邮(环郊内)</a>
+			<!-- 1.2.3 星夜达 -->
+			<a href="#" class="xing">星夜达</a>
+		</div>
+		<!-- 2、LOGO 和 热门搜索 -->
+		<!-- 3、BANNER广告(横幅广告) -->
+		<div id="banner">
+			<img src="/static/img/banner1.jpg">
+		</div>
+		<!-- 4、四幅小广告 -->
+		<ul id="adv-img">
+			<li>
+				<a href="#">
+					<img src="/static/img/2ba20598135dbba5e97d241ebfa167d9.jpg">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="/static/img/25af37592bf484fbeaef1cc4ff1e09c7.jpg">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="/static/img/904419aa2e364412b3c07c3cbda24ef9.jpg">
+				</a>
+			</li>
+			<li class="no-margin">
+				<a href="#">
+					<img src="/static/img/d72b849b461c08d991c265df00a1bfde.jpg">
+				</a>
+			</li>
+		</ul>
+		<!-- 5、网页主体内容(各种产品) -->
+		<div id="main">
+      <div class="title">
+        <p class="check-box">
+          <input type="checkbox" id="checkall">
+          全选
+        </p>
+        <p class="goods">商品</p>
+        <p class="price">单价</p>
+        <p class="quantity">数量</p>
+        <p class="t-sum">小计</p>
+        <p class="action">操作</p>
+      </div>
+      <div id="good-content">
+        <div class="g-item">
+          <p class="check-box">
+            <input type="checkbox">
+            <img src="/static/img/1-270x270-430-9RBRWTU9.jpg" width="80">
+          </p>
+          <p class="goods">松下（Panasonic）电吹风机家用EH-ENE2-A405家用负离子大功率恒温护</p>
+          <p class="price">&yen;169</p>
+          <p class="quantity">数量</p>
+          <p class="t-sum">
+            <b>&yen;169</b>
+          </p>
+          <p class="action">
+            <a href="#">移除</a>
+          </p>
+        </div>
+        <div class="g-item">
+          <p class="check-box">
+            <input type="checkbox">
+            <img src="/static/img/1-270x270-430-9RBRWTU9.jpg" width="80">
+          </p>
+          <p class="goods">松下（Panasonic）电吹风机家用EH-ENE2-A405家用负离子大功率恒温护</p>
+          <p class="price">&yen;169</p>
+          <p class="quantity">数量</p>
+          <p class="t-sum">
+            <b>&yen;169</b>
+          </p>
+          <p class="action">
+            <a href="#">移除</a>
+          </p>
+        </div>
+      </div>
+
+		</div>
+		<!-- 5、网页主体内容结束-->
+		<!-- 6、网页底部 -->
+	</div>
+ </body>
+</html>

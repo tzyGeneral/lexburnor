@@ -1,0 +1,81 @@
+
+{% extends 'login.html' %}
+
+{% block title %}
+    天天果园-会员注册
+{% endblock %}
+
+{% block header %}
+    注册会员
+{% endblock %}
+
+{% block anchor %}
+    <a href="{% url 'login' %}">会员登录</a>
+{% endblock %}
+
+{% block form %}
+    <form action="/register/" method="post" id="formReg">
+    {% csrf_token %}
+    <div class="form-line">
+        <p>手机号</p>
+        <div>
+            <input type="text" name="uphone" class="form-control">
+            <br>
+            <span id="errshow"></span>
+         </div>
+    </div>
+
+    <div class="form-line">
+        <p>密码</p>
+        <div>
+            <input type="text" name="upwd" class="form-control">
+         </div>
+    </div>
+
+    <div class="form-line">
+        <p>确认密码</p>
+        <div>
+            <input type="text" name="uphone" class="form-control">
+         </div>
+    </div>
+
+    <div class="form-line">
+        <p>用户名</p>
+        <div>
+            <input type="text" name="uname" class="form-control">
+         </div>
+    </div>
+
+    <div class="form-line">
+        <p>邮箱</p>
+        <div>
+            <input type="text" name="uemail" class="form-control">
+         </div>
+    </div>
+
+				<div class="form-line">
+					<p></p>
+					<div>
+						<!-- 右：超链接  -->
+						<a href="{% url 'login' %}" class="goReg">会员登录</a>
+						<!-- 左：登录按钮 -->
+						<input type="submit" value="注册" class="btnLogin">
+					</div>
+				</div>
+    </form>
+{% endblock %}
+
+{% block style %}
+    <style>
+        #login{
+            margin-top: 30px;
+        }
+    </style>
+{% endblock %}
+
+{% block script %}
+    <script src="/static/js/jquery-1.11.3.js"></script>
+    <script src="/static/js/register.js"></script>
+{% endblock %}
+
+

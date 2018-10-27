@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>果园</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/static/js/new_project.css">
+	<script type="text/javascript" src="/static/js/jquery-1.11.3.js"></script>
+    <script src="/static/js/index.js"></script>
+</head>
+<body>
+	<!-- 页面结构划分 -->
+	<div id="container">
+		<!-- 导航 -->
+		<div id="nav">
+			<!-- 右侧导航 -->
+			<ul class="rightNav">
+				<li id="login">
+					<a href="#">[登录]</a>
+					,
+					<a href="#">[注册有惊喜]</a>
+				</li>
+				<li>
+					<b></b>
+					<a href="#">果园公告</a>
+				</li>
+				<li>
+					<b></b>
+					<a href="#">券卡兑换</a>
+				</li>
+				<li>
+					<b></b>
+					<a href="#">手机果园</a>
+				</li>
+                <li id="car">
+                    <b></b>
+                    <a href="#">购物车</a>
+                </li>
+			</ul>
+
+			<!-- 左侧导航 -->
+			<ol class="leftNav">
+				<li class="address">
+					<span>上海</span>
+					<!-- 三角标 -->
+					<u></u>
+					<ul class="select">
+						<li>北京</li>
+						<li>深圳</li>
+						<li>厦门</li>
+					</ul>
+				</li>
+				<li>满百包邮 (含郊区) </li>
+				<li>星夜达</li>
+			</ol>
+		</div>
+		<!-- 横幅 -->
+		<div id="banner">
+			<!-- 图片轮播 -->
+			<div class="wrapper">
+				<img src="/static/img/banner1.jpg">
+				<img src="/static/img/banner2.jpg">
+			</div>
+			<ul class="imgNav">
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+			</ul>
+		</div>
+
+		<!-- 今日推荐 -->
+		<div id="adv">
+			<a href="#">
+				<img src="/static/img/2ba20598135dbba5e97d241ebfa167d9.jpg">
+			</a>
+			<a href="#">
+				<img src="/static/img/25af37592bf484fbeaef1cc4ff1e09c7.jpg">
+			</a>
+			<a href="#">
+				<img src="/static/img/904419aa2e364412b3c07c3cbda24ef9.jpg">
+			</a>
+			<a href="#">
+				<img src="/static/img/d72b849b461c08d991c265df00a1bfde.jpg" class="lastimg">
+			</a>
+
+		</div>
+
+		<!-- 主体信息 -->
+		<div id="main">
+			<!-- 礼品卡券 -->
+{#			<div class="item">#}
+{#				<!-- 上方礼品卡券部分 -->#}
+{#				<p class="goodsClass">#}
+{#					<img src="/static/img/t4.png">#}
+{#					<a href="#">更多</a>#}
+{#				</p>#}
+{#				<!-- 下方商品信息展示 -->#}
+{#				<ul>#}
+{#					<li>#}
+{#						<p>#}
+{#							<img src="/static/img/1-270x270-2109-SDK5WUW8.jpg">#}
+{#						</p>#}
+{#						<div class="content">#}
+{#							<a href="#">#}
+{#								<img src="/static/img/cart.png">#}
+{#							</a>#}
+{#							<p>欢乐时光果篮</p>#}
+{#							<span>#}
+{#								&yen;188.00/份#}
+{#							</span>#}
+{#						</div>#}
+{#					</li>#}
+{#					<li>#}
+{#						<p>#}
+{#							<img src="/static/img/1-270x270-2114-226C8S26.jpg">#}
+{#						</p>#}
+{#						<div class="content">#}
+{#							<a href="#">#}
+{#								<img src="/static/img/cart.png">#}
+{#							</a>#}
+{#							<p>欢乐时光果篮</p>#}
+{#							<span>#}
+{#								&yen;188.00/份#}
+{#							</span>#}
+{#						</div>#}
+{#					</li>#}
+{#					<li>#}
+{#						<p>#}
+{#							<img src="/static/img/1-270x270-3877-BXDY6KCU.jpg">#}
+{#						</p>#}
+{#						<div class="content">#}
+{#							<a href="#">#}
+{#								<img src="/static/img/cart.png">#}
+{#							</a>#}
+{#							<p>欢乐时光果篮</p>#}
+{#							<span>#}
+{#								&yen;188.00/份#}
+{#							</span>#}
+{#						</div>#}
+{#					</li>#}
+{#					<li>#}
+{#						<p>#}
+{#							<img src="/static/img/1-270x270-701-CB41CHUW.jpg">#}
+{#						</p>#}
+{#						<div class="content">#}
+{#							<a href="#">#}
+{#								<img src="/static/img/cart.png">#}
+{#							</a>#}
+{#							<p>欢乐时光果篮</p>#}
+{#							<span>#}
+{#								&yen;188.00/份#}
+{#							</span>#}
+{#						</div>#}
+{#					</li>#}
+{#					<li class="no-margin">#}
+{#						<p>#}
+{#							<img src="/static/img/1-270x270-695-F2BSB4DC.jpg">#}
+{#						</p>#}
+{#						<div class="content">#}
+{#							<a href="#">#}
+{#								<img src="/static/img/cart.png">#}
+{#							</a>#}
+{#							<p>欢乐时光果篮</p>#}
+{#							<span>#}
+{#								&yen;188.00/份#}
+{#							</span>#}
+{#						</div>#}
+{#					</li>#}
+{#				</ul>#}
+{#				<ul>#}
+{#					<li>#}
+{#						<p>#}
+{#							<img src="/static/img/1-270x270-430-9RBRWTU9.jpg">#}
+{#						</p>#}
+{#						<div class="content">#}
+{#							<a href="#">#}
+{#								<img src="/static/img/cart.png">#}
+{#							</a>#}
+{#							<p>欢乐时光果篮</p>#}
+{#							<span>#}
+{#								&yen;188.00/份#}
+{#							</span>#}
+{#						</div>#}
+{#					</li>#}
+{#					<li>#}
+{#						<p>#}
+{#							<img src="/static/img/1-270x270-435-8829CP99.jpg">#}
+{#						</p>#}
+{#						<div class="content">#}
+{#							<a href="#">#}
+{#								<img src="/static/img/cart.png">#}
+{#							</a>#}
+{#							<p>欢乐时光果篮</p>#}
+{#							<span>#}
+{#								&yen;188.00/份#}
+{#							</span>#}
+{#						</div>#}
+{#					</li>#}
+{#					<li>#}
+{#						<p>#}
+{#							<img src="/static/img/1-270x270-2163-8PBW628F.jpg">#}
+{#						</p>#}
+{#						<div class="content">#}
+{#							<a href="#">#}
+{#								<img src="/static/img/cart.png">#}
+{#							</a>#}
+{#							<p>欢乐时光果篮</p>#}
+{#							<span>#}
+{#								&yen;188.00/份#}
+{#							</span>#}
+{#						</div>#}
+{#					</li>#}
+{#					<li>#}
+{#						<p>#}
+{#							<img src="/static/img/1-270x270-3356-T4P73D4B.jpg">#}
+{#						</p>#}
+{#						<div class="content">#}
+{#							<a href="#">#}
+{#								<img src="/static/img/cart.png">#}
+{#							</a>#}
+{#							<p>欢乐时光果篮</p>#}
+{#							<span>#}
+{#								&yen;188.00/份#}
+{#							</span>#}
+{#						</div>#}
+{#					</li>#}
+{#					<li class="no-margin">#}
+{#						<p>#}
+{#							<img src="/static/img/1-270x270-27316-F2BUCPRH.jpg">#}
+{#						</p>#}
+{#						<div class="content">#}
+{#							<a href="#">#}
+{#								<img src="/static/img/cart.png">#}
+{#							</a>#}
+{#							<p>欢乐时光果篮</p>#}
+{#							<span>#}
+{#								&yen;188.00/份#}
+{#							</span>#}
+{#						</div>#}
+{#					</li>#}
+{#				</ul>#}
+{##}
+{#			</div>#}
+		</div>
+		<!-- 主题信息模块高度为0(子元素全部浮动),影响底部模块布局
+		需要清除浮动
+		1.由于主题信息可以动态加载，不能固定高度
+		2.可以给父元素设置overflow: hidden;
+		3.也可以设置清除浮动，为父元素末尾添加空的块级标签，设置clear：both; -->
+
+		<!-- 底部信息 -->
+		<div dir="footer"></div>
+	</div>
+</body>
+<script type="text/javascript">
+
+</script>
+</html>
